@@ -447,19 +447,20 @@ by\par
 \setcounter{page}{1}
 \begin{center}
 {\fmfont
-{\bfseries \abstractname}\par
-\vspace{.5in}
+\abstractname\par
+\vspace{3ex}
 \@title\par
-\vspace{.1in}
+\vspace{3ex}
 by\par
-\vspace{.1in}
+\vspace{3ex}
 \@author\par
+\vspace{3ex}
 {\@degree} in \@field\par
-\vspace{.1in}
+\vspace{3ex}
 University of California, {\@campus}\par
-\vspace{.1in}
+\vspace{3ex}
 {\@chair}, Chair}
-\vspace{.1in}
+\vspace{3ex}
 \end{center}}
 
 \def\endabstract{\par\vfil\null\end{alwayssingle}
