@@ -491,9 +491,9 @@ Dissertation Committee Chair
 
 \newenvironment{acknowledgements}
 {\begin{alwayssingle}
-\begin{center}
-{\large \bfseries \acknowledgename}
-\end{center}
+\chapter*{\acknowledgename}
+\markboth{\acknowledgename}{\acknowledgename}
+\addcontentsline{toc}{chapter}{\acknowledgename}
 }
 {\end{alwayssingle}}
 
