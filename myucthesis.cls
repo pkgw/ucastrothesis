@@ -321,21 +321,18 @@
     \thispagestyle{empty}
     \setcounter{page}{1}
 
-    \null\vfil
   \begin{center}
     \fmfont
-    {\bfseries {\@title} \par}
-    \bigskip \medskip
-    by \par
+    {\@title} \par
+    \bigskip \bigskip \bigskip
+    By \par
     \bigskip \medskip
     {\@author} \par
-\vspace{6ex}
-    {\@prevdegrees} \par
-\vspace{6ex}
+    \vspace{8ex}
     A dissertation submitted in partial satisfaction of the \par
-\smallskip
+    \bigskip \medskip
     requirements for the degree of \par
-\smallskip
+    \bigskip \medskip
     {\@degree} \par
     \bigskip \medskip
     in \par
@@ -345,23 +342,23 @@
     in the \par
     \bigskip \medskip
     Graduate Division \par
-\smallskip
+    \bigskip \medskip
     of the \par
-\smallskip
+    \bigskip \medskip
     University of California, {\expandafter{\@campus}}
   \end{center}
 {
 \vspace{6ex}
 \begin{center}
 \fmsmallfont
-  Committee in charge: \\
+  Committee in charge: \par
+\bigskip \medskip
 {\@chair}, Chair \\
 {\@othermembers} \\
-\vspace{4ex}
+  \bigskip \bigskip \bigskip
   {\@degreesemester \ \@degreeyear}
 \end{center}
 }
-    \vfil\null
 \end{alwayssingle}
 
 \setcounter{footnote}{0}
