@@ -381,9 +381,10 @@
 \begin{alwayssingle}
 \thispagestyle{empty}
 \null\vfill
-\begin{center}
-\fmfont The dissertation of {\@author},\\ titled {\@title},\\ is approved: \\
+\parindent\z@
+\fmfont The dissertation of {\@author}, titled {\@title}, is approved: \\
 \vspace{.25in}
+\begin{center}
 \vspace{\@approvalspace}
 $\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small Chair%
 \hspace{3.15in} Date }}\:$ \\
@@ -404,10 +405,7 @@ $\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small ~\hspace{3.5in} Date }}\:$ \\
 $\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small ~\hspace{3.5in} Date }}\:$ \\
 \vspace{\@approvalspace}
 \fi
-{\fmfont University of California, {\@campus}} \\
-\vspace{-.25in}
-\vspace{\@approvalspace}
-{\fmfont \@degreesemester \ \@degreeyear}
+{\fmfont University of California, {\@campus}}
 \end{center}
 \vfill\null
 \end{alwayssingle}
