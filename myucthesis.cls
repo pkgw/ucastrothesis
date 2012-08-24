@@ -419,7 +419,7 @@ $\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small ~\hspace{3.5in} Date }}\:$ \\
 \thispagestyle{empty}
 \begin{center}
 {\fmfont
-{\bfseries\@title}\par
+{\@title}\par
 \vspace{1in}
 Copyright \@degreeyear\par
 by\par
