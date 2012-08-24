@@ -344,11 +344,11 @@
     \bigskip \medskip
     in the \par
     \bigskip \medskip
-    GRADUATE DIVISION \par
+    Graduate Division \par
 \smallskip
     of the \par
 \smallskip
-    UNIVERSITY OF CALIFORNIA, {\expandafter\uppercase\expandafter{\@campus}}
+    University of California, {\expandafter{\@campus}}
   \end{center}
 {
 \vspace{6ex}

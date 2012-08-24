@@ -72,62 +72,6 @@
   }}
 
 
-%% Alteration to title page to remove caps (KLS Feb 2010)
-\def\maketitle{
-{\ssp
-\begin{alwayssingle}
-    \let\footnotesize\small
-    \let\footnoterule\relax
-    \thispagestyle{empty}
-    \setcounter{page}{1}
-
-    \null\vfil
-  \begin{center}
-    \fmfont
-    {\bfseries {\@title} \par}
-    \bigskip \medskip
-    by \par
-    \bigskip \medskip
-    {\@author} \par
-\vspace{6ex}
-    {\@prevdegrees} \par
-\vspace{6ex}
-    A dissertation submitted in partial satisfaction of the \par
-\smallskip
-    requirements for the degree of \par
-\smallskip
-    {\@degree} \par
-    \bigskip \medskip
-    in \par
-    \bigskip \medskip
-    {\@field}\par
-    \bigskip \medskip
-    in the \par
-    \bigskip \medskip
-    Graduate Division \par
-\smallskip
-    of the \par
-\smallskip
-    University of California, {\expandafter\expandafter{\@campus}}
-  \end{center}
-{
-\vspace{6ex}
-\begin{center}
-\fmsmallfont
-  Committee in charge: \\
-{\@chair}, Chair \\
-{\@othermembers} \\
-\vspace{4ex}
-  {\@degreesemester \ \@degreeyear}
-\end{center}
-}
-    \vfil\null
-\end{alwayssingle}
-
-\setcounter{footnote}{0}
-}}
-
-
 %% set margins (ARW Feb 2010)
 \oddsidemargin 	0in		% note that \oddsidemargin = \evensidemargin
 \evensidemargin	0in
