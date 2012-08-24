@@ -10,6 +10,25 @@
 % files. This is useful if you want to manually tweak them before you
 % generate your final PDF.
 
+
+% Page layout. The fancyhdr package may complain about the need for a
+% larger headheight, depending on how long chapter titles are; if left
+% unspecified in the geometry setup, it defaults to 12pt. The
+% "showframe" option causes the geometry package (version >= 5.0) to
+% show a frame around the margins on every page, which is great for
+% checking that you don't overflow anywhere.
+
+%\usepackage[letterpaper,includehead,margin=1in,headheight=28pt,showframe]{geometry}
+\usepackage[letterpaper,includehead,margin=1in,headheight=28pt]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\lhead[\fancyplain{\thepage}{\thepage}]{\fancyplain{}{\scshape\rightmark}}
+\rhead[\fancyplain{}{\scshape\leftmark}]{\fancyplain{\thepage}{\thepage}}
+\chead{}
+\cfoot{}
+\lfoot{}
+\rfoot{}
+
 \newcommand{\chabstract}{\medskip \bigskip
   {\bf \Large \centerline{Abstract} \bigskip}}
 \newcommand{\chacknowledgements}{\medskip \bigskip

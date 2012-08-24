@@ -1,29 +1,5 @@
 %% various style tweaks
 
-%% a few minor resizings
-\parindent 2em
-\topmargin 0.35in
-\headheight \baselineskip
-\headsep = \baselineskip  % uncomment this--looks better for bottom margin
-\addtolength{\textheight}{10pt}
-\addtolength{\textwidth}{-5pt}
-
-
-\usepackage{fancyhdr}
-
-%% One-sided style
-%\lhead{\fancyplain{}{\scshape \leftmark}}
-%\rhead{\fancyplain{\thepage}{\thepage}}
-
-\pagestyle{fancyplain}
-%% Two-sided style - use in the document itself
-\lhead[\fancyplain{\thepage}{\thepage}]{\fancyplain{}{\scshape\rightmark}}
-\rhead[\fancyplain{}{\scshape\leftmark}]{\fancyplain{\thepage}{\thepage}}
-\chead{}
-\cfoot{}
-\lfoot{}
-\rfoot{}
-
 %% Make Chapter # font as big as the chapter heading font
 \def\@makechapterhead#1{%
   \vspace*{50\p@}%
@@ -37,16 +13,6 @@
     \Huge \bfseries #1\par\nobreak
     \vskip 40\p@
   }}
-
-
-%% set margins (ARW Feb 2010)
-\oddsidemargin 	0in		% note that \oddsidemargin = \evensidemargin
-\evensidemargin	0in
-\marginparwidth	0pt
-\textwidth 			6.5in	% width of main text box
-\headwidth			6.5in
-\topmargin			0in		% margin at top of page above all printing + 1 inch.
-\textheight 		8.4in	% height of main text box
 
 
 %% make body single-spaced (KLS Feb 2010)
