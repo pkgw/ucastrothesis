@@ -1,17 +1,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% deluxetable.sty:  Standalone definitions of aastex's deluxetable.
+% mydeluxetable.sty:  Standalone definitions of aastex's deluxetable.
+% Customized from deluxetable.sty to integrate with ucthesis.cls
+% a bit better by Peter Williams.
 %
 % Credit: This file kindly provided by Alexey Vikhlinin.
 %
 % USAGE:
 %
-% 1. Put \usepackage{deluxetable} in the preamble of your document.
-% 2. Copy this text to a local file called deluxetable.sty.
+% 1. Put \usepackage{mydeluxetable} in the preamble of your document.
+% 2. Copy this text to a local file called mydeluxetable.sty.
 %
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]%
-\ProvidesPackage{deluxetable}%
+\ProvidesPackage{mydeluxetable}%
 
-\newcommand\nodata{ ~$\cdots$~ }%
+\def\@to{to}%
 \newcommand\ulap[1]{\vbox\@to\z@{{\vss#1}}}%
 \newcommand\dlap[1]{\vbox\@to\z@{{#1\vss}}}%
 
