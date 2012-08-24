@@ -24,27 +24,6 @@
 \lfoot{}
 \rfoot{}
 
-%% Redefine these environments so that they do not uppercase the headings
-
-\def\chaptermark#1{%
-	\markboth{\@chapapp\ \thechapter.~~  #1}{}}
-\def\sectionmark#1{%
-	\markright{Section \thesection.~~  #1}}
-
-\def\tableofcontents{\@restonecolfalse
-  \if@twocolumn\@restonecoltrue\onecolumn\fi
-  \chapter*{\contentsname
-        \@mkboth{{\contentsname}}{{\contentsname}}}%
-  {\ssp\@starttoc{toc}}\if@restonecol\twocolumn\fi}
-
-\def\listoffigures{\@restonecolfalse
-  \if@twocolumn\@restonecoltrue\onecolumn\fi
-  \chapter*{\listfigurename\@mkboth{{\listfigurename}}%
-{{\listfigurename}}}
-   \addcontentsline{toc}{chapter}{\listfigurename}
-   {\ssp\@starttoc{lof}}\if@restonecol
-    \twocolumn\fi}
-
 %%  Remove the indent in the list of figures
 \def\l@figure{\@dottedtocline{1}{0em}{2.3em}}
 

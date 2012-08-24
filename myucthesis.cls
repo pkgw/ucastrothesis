@@ -837,7 +837,7 @@ Dissertation Committee Chair
 \def\tableofcontents{\@restonecolfalse
   \if@twocolumn\@restonecoltrue\onecolumn\fi
   \chapter*{\contentsname
-        \@mkboth{\uppercase{\contentsname}}{\uppercase{\contentsname}}}%
+        \@mkboth{\contentsname}{\contentsname}}%
   {\ssp\@starttoc{toc}}\if@restonecol\twocolumn\fi}
 
 \def\l@part#1#2{\addpenalty{-\@highpenalty}%
@@ -883,8 +883,7 @@ Dissertation Committee Chair
 % Single-space list of figures, add it to the table of contents.
 \def\listoffigures{\@restonecolfalse
   \if@twocolumn\@restonecoltrue\onecolumn\fi
-  \chapter*{\listfigurename\@mkboth{\uppercase{\listfigurename}}%
-{\uppercase{\listfigurename}}}
+  \chapter*{\listfigurename\@mkboth{\listfigurename}{\listfigurename}}
    \addcontentsline{toc}{chapter}{\listfigurename}
    {\ssp\@starttoc{lof}}\if@restonecol
     \twocolumn\fi}
@@ -1215,16 +1214,16 @@ Dissertation Committee Chair
  \def\@oddfoot{}\def\@evenfoot{}%       No feet.
  \def\@evenhead{\rmfamily \thepage\hfil \slshape \leftmark}%    Left heading.
  \def\@oddhead{{\slshape \rightmark}\hfil \rmfamily\thepage}% Right heading.
- \def\chaptermark##1{\markboth {\uppercase{\ifnum \c@secnumdepth >\m@ne
-      \@chapapp\ \thechapter. \ \fi ##1}}{}}%
- \def\sectionmark##1{\markright {\uppercase{\ifnum \c@secnumdepth >\z@
-   \thesection. \ \fi ##1}}}}
+ \def\chaptermark##1{\markboth {\ifnum \c@secnumdepth >\m@ne
+      \@chapapp\ \thechapter. \ \fi ##1}{}}%
+ \def\sectionmark##1{\markright {\ifnum \c@secnumdepth >\z@
+   \thesection. \ \fi ##1}}}
 \else               % If one-sided printing.
 \def\ps@headings{\let\@mkboth\markboth
 \def\@oddfoot{}\def\@evenfoot{}%     No feet.
 \def\@oddhead{{\slshape \rightmark}\hfil \rmfamily\thepage}% Heading.
-\def\chaptermark##1{\markright {\uppercase{\ifnum \c@secnumdepth >\m@ne
-  \@chapapp\ \thechapter. \ \fi ##1}}}}
+\def\chaptermark##1{\markright {\ifnum \c@secnumdepth >\m@ne
+  \@chapapp\ \thechapter. \ \fi ##1}}}
 \fi
 
 % Definition of 'myheadings' page style.
