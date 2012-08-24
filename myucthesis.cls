@@ -1,5 +1,7 @@
-%% ucthesis.cls
+%% myucthesis.cls
+%% Adapted from ucthesis.cls with minor changes.
 %% Copyright (C) 1988-2004 Daniel Gildea, BBF, Ethan Munson.
+%% Copyright 2012 Peter Williams
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
@@ -107,7 +109,8 @@
 %%% ====================================================================
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ucthesis}[2004/12/19 v3.2 University of California Thesis Class]
+\ProvidesClass{myucthesis}[2004/12/19 v3.2 University of California
+  Thesis Class HACKED]
 
 %    ****************************************
 %    *               OPTIONS                *

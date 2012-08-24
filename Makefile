@@ -17,7 +17,7 @@ cleans += intro/intro.aux
 # that it's currently looking at unless the file gets opened in write
 # mode and closed, so we 'cp' instead.)
 
-deps += uct12.clo aasmacros.sty setup.tex thesis.bib yahapj.bst
+deps += myucthesis.cls uct12.clo aasmacros.sty setup.tex thesis.bib yahapj.bst
 cleans += thesis.aux thesis.bbl thesis.blg thesis.lof thesis.log \
   thesis.lot thesis.out thesis.toc mthesis.pdf setup.aux
 toplevels += mthesis.pdf
