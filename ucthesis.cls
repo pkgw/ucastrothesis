@@ -10,7 +10,7 @@
 % version 2003/12/01 or later.
 %
 % This work has the LPPL maintenance status "unmaintained".
-% 
+%
 % This work consists of the files ucthesis.cls, uct10.clo, uct11.clo,
 % uct12.clo, uctest.bib, and uctest.tex.
 
@@ -26,11 +26,11 @@
 %%%                        class, which is intended to meet the requirements
 %%%                        for University of California Ph.D. dissertations.
 %%%			   It is a direct port to LaTeX2e from UCTHESIS
-%%%			   v2.7 by Ethan V. Munson, with no changes other 
+%%%			   v2.7 by Ethan V. Munson, with no changes other
 %%%			   than those for compatibility.  The major modifictions
 %%%			   are in the font selection commands in the option
 %%%			   files uct1x.clo.
-%%%			   
+%%%
 %%%			   UCTHESIS.STY v2.7 is based on the standard
 %%%			   report.sty as modified by Mittelbach and Schopf in
 %%%			   Jan 1992.  The primary differences are (1) the use
@@ -46,15 +46,15 @@
 %%%                        that arise with it.
 %%%
 %%%			   Version 2.x fixes a bug in the previous
-%%%			   version of 20 Jun 1988.  The bug was that 
+%%%			   version of 20 Jun 1988.  The bug was that
 %%%			   "draft" optional mode didn't work because of
 %%%			   problems in handling optional arguments.
-%%%                        This file does not seem to work with earlier 
+%%%                        This file does not seem to work with earlier
 %%%                        versions of LaTeX (pre-Jan 1992).
 %%%
-%%%			   Version 2.3 includes a single-spaced 
+%%%			   Version 2.3 includes a single-spaced
 %%%			   tabular* environment.
-%%%			
+%%%
 %%%			   Version 2.4 sets \evensidemargin correctly
 %%%			   for two-sided style.  It also adds new
 %%%			   environments (\smalltabular and
@@ -77,11 +77,11 @@
 %%%
 %%%			   Version 3.0 is a direct port of version 2.7
 %%%			   to LaTeX2e.  The major revisions in ucthesis.cls
-%%%			   are converting option processing to LaTeX2e 
+%%%			   are converting option processing to LaTeX2e
 %%%			   conventions.  The uct1x files have been revised
 %%%			   to use the new font selection commands.
 %%%
-%%%			   Version 3.1 makes the following changes:   
+%%%			   Version 3.1 makes the following changes:
 %%%				``U of C at CAMPUS'' is now ``U of C, CAMPUS''
 %%%				new degreesemester variable
 %%%				roman numeral frontmatter begins with page i,
@@ -90,14 +90,14 @@
 %%%
 %%%			   Version 3.2 explicitly states the license as LPPL.
 %%%
-%%%			   Some users have had problems with the 
+%%%			   Some users have had problems with the
 %%%			   margins ending up too small on one side.
 %%%			   This appears to be a DVI-to-PostScript
 %%%			   driver or printer-adjustment problem.
 %%%			   If you have such trouble, make small adjustments
 %%%			   to the \textwidth and \oddsidemargin
 %%%			   settings in your document preamble.
-%%%			   
+%%%
 %%%			   Another problem some people have had is
 %%%			   that you can't use \pagestyle{headings}
 %%%			   and \markboth if you use \part.  The solution
@@ -148,7 +148,7 @@
 % version.  To break this dependency, I have made \ds@draft set a marker
 % which is later tested to determine whether to actually do the draft
 % mode actions.
-% 
+%
 % Ethan Munson (October 16, 1992)
 
 % FMi 91/03/30: made twocolum.sty a file and twocolumn an option.
@@ -159,7 +159,7 @@
 
 % The \ProcessOptions command causes the execution of every option command
 % FOO which is declared and for which the user typed the FOO option in his
-% \documentclass.  For every undeclared option BAR there will be a warning 
+% \documentclass.  For every undeclared option BAR there will be a warning
 % message. (BBF 10/31/94)
 
 \ProcessOptions
@@ -253,7 +253,7 @@
 % DECLARATIONS
 %
 % These macros are used to declare arguments needed for the
-% construction of the front matter.  
+% construction of the front matter.
 
 % The year the degree will be officially conferred
 \def\degreeyear#1{\gdef\@degreeyear{#1}}
@@ -294,7 +294,7 @@
 
 % \alwayssingle and \endalwayssingle
 %
-% These macros define an environment for front matter that is always 
+% These macros define an environment for front matter that is always
 % single column even in a double-column document.
 
 \def\alwayssingle{\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
@@ -303,7 +303,7 @@
 \def\endalwayssingle{\if@restonecol\twocolumn \else \newpage \fi}
 
 % \maketitle outputs the complete titlepage.  It requires all the
-% above macros except \campuscap.  It is probably not correct for 
+% above macros except \campuscap.  It is probably not correct for
 % joint (e.g. UCSD/SDSU) degrees.
 
 % Set the font that will be used in the front matter headings
@@ -367,7 +367,7 @@
 % APPROVALPAGE
 %
 % The \approvalpage macro emits a UC-approved approval page ready for
-% your committee's signature.  It is not an automatic part of the 
+% your committee's signature.  It is not an automatic part of the
 % output because there's really no point in printing it until you are
 % ready to get signatures.  It requires the the \year, \author, and
 % \campus macros have been defined.  It uses lots of tricky spacing
@@ -461,7 +461,7 @@ University of California, {\@campus}\par
 
 \def\endabstract{\par\vfil\null\end{alwayssingle}
 }
- 
+
 \def\abstractsignature{
 \hspace*{\fill}
 \begin{minipage}[t]{3.25in}
@@ -483,7 +483,7 @@ Dissertation Committee Chair
 
 % ACKNOWLEDGEMENTS
 %
-% The acknowledgements environment puts a large, bold, centered 
+% The acknowledgements environment puts a large, bold, centered
 % "Acknowledgements" label at the top of the page.
 
 \newenvironment{acknowledgements}
@@ -637,9 +637,9 @@ Dissertation Committee Chair
 {\par\ssp\def\@halignto{to#1}\@tabular}
 
 % \smalltabular and \smalltabular* are alternative tabular styles
-% in the \small font.  They are required because single-spacing implies a 
+% in the \small font.  They are required because single-spacing implies a
 % change of font to a particular size.
-% EVM, 7/20/93 
+% EVM, 7/20/93
 \def\smalltabular{\par\smallssp\let\@halignto\@empty\@tabular}
 \def\endsmalltabular{\endtabular}
 \expandafter \def\csname smalltabular*\endcsname #1%
@@ -1044,7 +1044,7 @@ Dissertation Committee Chair
    \edef\@currentlabel{\csname p@footnote\endcsname\@thefnmark}\@makefntext
     {\rule{\z@}{\footnotesep}\ignorespaces
       #1\strut}}}
- 
+
 %    ****************************************
 %    *         FIGURES AND TABLES           *
 %    ****************************************
@@ -1080,7 +1080,7 @@ Dissertation Committee Chair
 
 \long\def\@makecaption#1#2{% Add space only if something is ...
    \par\ifdim\prevdepth>-\p@ \vskip 10\p@\relax \fi % above the caption
-   \setbox\@tempboxa\hbox{\vbox to\topskip{}#1: #2\unskip\strut}% 
+   \setbox\@tempboxa\hbox{\vbox to\topskip{}#1: #2\unskip\strut}%
    \ifdim \wd\@tempboxa >\hsize      % IF longer than one line:
        {\ssp#1: #2\unskip\strut\par} %   THEN set as ordinary paragraph.
      \else                           %   ELSE  center.
