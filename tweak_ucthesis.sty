@@ -72,43 +72,6 @@
   }}
 
 
-%% Alteration to approval page (KLS Feb 2010)
-\def\approvalpage{
-\begin{alwayssingle}
-\thispagestyle{empty}
-\null\vfill
-\begin{center}
-\fmfont The dissertation of {\@author},\\ titled {\@title},\\ is approved: \\
-\vspace{.25in}
-\vspace{\@approvalspace}
-$\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small Chair%
-\hspace{3.15in} Date }}\:$ \\
-\vspace{\@approvalspace}
-$\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small ~\hspace{3.5in} Date }}\:$ \\
-\vspace{\@approvalspace}
-$\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small ~\hspace{3.5in} Date }}\:$ \\
-\vspace{\@approvalspace}
-\ifnum \@numberofmembers > 3
-$\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small ~\hspace{3.5in} Date }}\:$ \\
-\vspace{\@approvalspace}
-\fi
-\ifnum \@numberofmembers > 4
-$\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small ~\hspace{3.5in} Date }}\:$ \\
-\vspace{\@approvalspace}
-\fi
-\ifnum \@numberofmembers > 5
-$\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small ~\hspace{3.5in} Date }}\:$ \\
-\vspace{\@approvalspace}
-\fi
-{\fmfont University of California, {\@campus}} \\
-\vspace{-.25in}
-\vspace{\@approvalspace}
-{\fmfont \@degreesemester \ \@degreeyear}
-\end{center}
-\vfill\null
-\end{alwayssingle}
-}
-
 %% Alteration to title page to remove caps (KLS Feb 2010)
 \def\maketitle{
 {\ssp

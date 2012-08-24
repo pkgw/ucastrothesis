@@ -382,7 +382,7 @@
 \thispagestyle{empty}
 \null\vfill
 \begin{center}
-\fmfont The dissertation of {\@author} is approved: \\
+\fmfont The dissertation of {\@author},\\ titled {\@title},\\ is approved: \\
 \vspace{.25in}
 \vspace{\@approvalspace}
 $\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small Chair%
