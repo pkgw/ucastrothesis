@@ -96,7 +96,7 @@
  \let\tblnote@list\@empty
 }%
 \newcommand\tablenotetext[2]{%
- \appgdef\tblnote@list{\@tablenotetext{#1}{#2}}%
+ \appgdef\tblnote@list{\@tablenotetext{#1}{\footnotesize#2}}%
 }%
 \def\spew@tblnotes{%
  \@ifx@empty\tblnote@list{}{%
@@ -404,8 +404,8 @@
 }%
 \def\@ptablenotes#1{%
  \par
- \vspace{2ex}%
- {\setlength\parskip{1.5ex}#1}%
+ \vspace{0.5ex}%
+ {\setlength\parskip{0.5ex}#1}%
 }%
 \def\@ptablenotes@apj#1{%
  \par
