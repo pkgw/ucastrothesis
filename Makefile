@@ -1,17 +1,26 @@
+# This work is dedicated to the public domain.
+
 texargs = -interaction nonstopmode -halt-on-error -file-line-error
 
 default: mthesis.pdf # default target if you just type "make"
 
 
-# Introduction. Sample 'make' rule included to show how you can
-# process data as you compile your thesis using standard GNU make
-# constructs.
+# Resources and rules for the introductory chapter. Sample 'make' rule
+# included to show how you can process data as you compile your thesis
+# using standard GNU make constructs.
 
 deps += intro/intro.tex intro/processed.tex
 cleans += intro/intro.aux intro/processed.tex
 
 intro/processed.tex: intro/sample.tex
 	sed -e s/terrible/wonderful/ $< >$@
+
+
+# Chapter Two
+
+## deps += ...
+## cleans += ...
+## etc
 
 
 # The thesis itself. We move the PDF to a new filename so that viewers
