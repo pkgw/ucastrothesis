@@ -1,0 +1,36 @@
+\documentclass[12pt]{ucthesis}
+\usepackage{natbib,aasmacros,amsmath,amssymb,bibsetup,deluxetable,epsfig,graphicx,lscape,longtable,multirow}
+\citestyle{aa}
+\bibliographystyle{apj}
+%% below needs to be after biliographystyle to make bib single-spaced
+\usepackage{tweak_ucthesis}
+
+%\nofiles %% Uncomment for final edit of thesis.lof and thesis.lot
+
+%% kluge to denote abstracts within thesis chapters
+\newcommand{\chabstract}{\medskip \bigskip {\bf \Large \centerline{Abstract} \bigskip}}
+%% kluge to denote acknowledgements within thesis chapters
+\newcommand{\chacknowledgements}{\medskip \bigskip {\bf \Large \noindent Acknowledgements \bigskip \nopagebreak}}
+%% kluge to fix figure/table numbers
+\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
+\renewcommand{\thetable}{\thechapter.\arabic{table}}
+
+%% if want to only compile parts
+%\includeonly{frontmatter/frontmatter}
+%\includeonly{intro/intro}
+
+\begin{document}
+
+%% front end stuff
+\include{frontmatter}
+
+%% thesis text
+\include{intro/intro}
+\include{data/data}
+\include{topic/topic}
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{awetzel}
+
+
+\end{document}
