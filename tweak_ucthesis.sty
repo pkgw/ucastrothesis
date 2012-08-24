@@ -17,17 +17,3 @@
 
 %% make body single-spaced (KLS Feb 2010)
 \ssp
-
-
-%% make bibliography single-spaced (ARW Mar 2010)
-\let\oldthebibliography=\thebibliography
-\let\endoldthebibliography=\endthebibliography
-\renewenvironment{thebibliography}[1]{%
-  \begin{oldthebibliography}{#1}%
-    \setlength{\parskip}{0ex}%
-    \setlength{\itemsep}{0ex}%
-}%
-{%
-  \end{oldthebibliography}%
-}
-

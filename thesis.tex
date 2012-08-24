@@ -1,8 +1,5 @@
 \documentclass[12pt]{myucthesis}
-\usepackage{natbib,aasmacros,amsmath,amssymb,graphicx}
-\newcommand{\newblock}{\par} % need this for some natbib internal bug
-\citestyle{aa}
-\bibliographystyle{yahapj}
+\usepackage{aasmacros,amsmath,amssymb,graphicx}
 \usepackage{tweak_ucthesis} % must come after \bibliographystyle
 
 %\nofiles
@@ -28,6 +25,17 @@
 \cfoot{}
 \lfoot{}
 \rfoot{}
+
+
+% Bibliography stuff:
+
+\newcommand{\newblock}{\par} % need this for some natbib internal bug
+\usepackage{natbib}
+\citestyle{aa}
+\bibliographystyle{yahapj}
+\setlength{\bibsep}{0ex} % single-space entries
+\def\bibpreamble{\addcontentsline{toc}{chapter}{Bibliography}} % get a good TOC entry
+
 
 \newcommand{\chabstract}{\medskip \bigskip
   {\bf \Large \centerline{Abstract} \bigskip}}
@@ -75,7 +83,5 @@ Too bad nobody helped me.
 \end{frontmatter}
 
 \include{intro/intro}
-\newpage
-\addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{thesis}{}
 \end{document}
