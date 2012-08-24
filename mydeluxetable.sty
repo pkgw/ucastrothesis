@@ -107,7 +107,7 @@
 \prepdef\endtable{\spew@tblnotes}%
 \expandafter\prepdef\csname endtable*\endcsname{\spew@tblnotes}%
 \let\tableline=\hline
-\long\def\@makecaption#1#2{\vskip 2ex\noindent#1\ #2\par}%
+%% \long\def\@makecaption#1#2{\vskip 2ex\noindent#1\ #2\par}%
 \newcommand\tablenum[1]{%
  \def\thetable{#1}%
  \let\@currentlabel\thetable
@@ -175,53 +175,53 @@
  \edef\@preamble{\@preamble\hskip\tabcolsep\tabskip\fill}%
 }%
 \newdimen\pt@tmpcapwidth
-\long\def\@makecaption@plano#1#2{%
- \@ifdim{\pt@width>\z@}{%
-  \pt@tmpcapwidth\pt@width
- }{%
-  \pt@tmpcapwidth\textwidth
- }%
- \center
-  \parbox{\pt@tmpcapwidth}{%
-   \@make@caption@text{#1}{#2}%
-  }%
- \endcenter
-}%
+%% \long\def\@makecaption@plano#1#2{%
+%%  \@ifdim{\pt@width>\z@}{%
+%%   \pt@tmpcapwidth\pt@width
+%%  }{%
+%%   \pt@tmpcapwidth\textwidth
+%%  }%
+%%  \center
+%%   \parbox{\pt@tmpcapwidth}{%
+%%    \@make@caption@text{#1}{#2}%
+%%   }%
+%%  \endcenter
+%% }%
 \def\fnum@ptable{Table \thetable}%
 \def\fnum@ptablecont{Table \thetable \,\,  {\rmfamily (cont'd)}}%
-\long\def\@make@caption@text#1#2{%
- \center\rmfamily#1.\quad#2\endcenter
-}%
-\long\def\@makecaption@plano@cont#1#2{%
- \center\rmfamily#1\endcenter
- \vskip 2.5ex
-}%
+%% \long\def\@make@caption@text#1#2{%
+%%  \center\rmfamily#1.\quad#2\endcenter
+%% }%
+%% \long\def\@makecaption@plano@cont#1#2{%
+%%  \center\rmfamily#1\endcenter
+%%  \vskip 2.5ex
+%% }%
 \def\fnum@ptablecont@pptt{Table \thetable \,\,  {\itshape (cont'd)}}%
-\long\def\@make@caption@text@pptt#1#2{%
- \center\sc#1\\[.5ex]#2\endcenter
-}%
-\long\def\@makecaption@plano@cont@pptt#1#2{%
- \center\sc#1\endcenter
- \vskip 1.5ex
-}%
+%% \long\def\@make@caption@text@pptt#1#2{%
+%%  \center\sc#1\\[.5ex]#2\endcenter
+%% }%
+%% \long\def\@makecaption@plano@cont@pptt#1#2{%
+%%  \center\sc#1\endcenter
+%%  \vskip 1.5ex
+%% }%
 \def\fnum@ptable@apj{TABLE \thetable}%
 \def\fnum@ptablecont@apj{TABLE \thetable \,\,  {\itshape (cont'd)}}%
-\long\def\@make@caption@text@apj#1#2{%
- \center\Large\sc#1\\[.5ex]#2\endcenter
-}%
-\long\def\@makecaption@plano@cont@apj#1#2{%
- \center\Large\sc#1\endcenter
- \vskip 1.5ex
-}%
+%% \long\def\@make@caption@text@apj#1#2{%
+%%  \center\Large\sc#1\\[.5ex]#2\endcenter
+%% }%
+%% \long\def\@makecaption@plano@cont@apj#1#2{%
+%%  \center\Large\sc#1\endcenter
+%%  \vskip 1.5ex
+%% }%
 \def\fnum@ptable@aj{Table \thetable.}%
 \def\fnum@ptablecont@aj{Table \thetable.\space{\rmfamily (continued)}}%
-\long\def\@make@caption@text@aj#1#2{%
- \center\large{\sc#1}\space#2\endcenter
-}%
-\long\def\@makecaption@plano@cont@aj#1#2{%
- \center\large{\sc#1}\endcenter
- \vskip 1.5ex
-}%
+%% \long\def\@make@caption@text@aj#1#2{%
+%%  \center\large{\sc#1}\space#2\endcenter
+%% }%
+%% \long\def\@makecaption@plano@cont@aj#1#2{%
+%%  \center\large{\sc#1}\endcenter
+%%  \vskip 1.5ex
+%% }%
 \newenvironment{deluxetable}[1]{%
  \def\pt@format{\string#1}%
  \let\@acol\pt@tabacol
@@ -273,7 +273,7 @@
   \def\@halignto{}%
  }%
  \let\fnum@table=\fnum@ptable
- \let\@makecaption\@makecaption@plano
+%% \let\@makecaption\@makecaption@plano
  \global\pt@line\z@
  \start@pt@tabular
  \after@startdata
@@ -336,7 +336,7 @@
   \clearpage
   \addtocounter{table}{\m@ne}%
   \let\fnum@table=\fnum@ptablecont
-  \let\@makecaption\@makecaption@plano@cont
+%%  \let\@makecaption\@makecaption@plano@cont
   \global\pt@ncol=\pt@column%  Either 0 or value of \tablecolumns
   \global\pt@line\z@
   \start@pt@tabular
