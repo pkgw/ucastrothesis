@@ -18,7 +18,43 @@
 \renewcommand{\thetable}{\thechapter.\arabic{table}}
 
 \begin{document}
-\include{frontmatter}
+\include{setup}
+\maketitle
+\copyrightpage
+
+\begin{abstract}
+My work is awesome. Give me a Ph.D.
+\end{abstract}
+
+\begin{frontmatter}
+\renewcommand{\thepage}{\roman{page}}
+\setcounter{page}{1}
+
+\begin{dedication}
+\null\vfil
+{\large
+\begin{center}
+I dedicate this dissertation to graduate students everywhere.
+\end{center}}
+\null\vfil
+\end{dedication}
+
+\tableofcontents
+\listoffigures % optional
+\listoftables % optional
+
+% If using code.sty, can also add:
+%% \listofcodes
+%% \addcontentsline{toc}{chapter}{List of Code Examples}
+
+\begin{acknowledgements}
+Too bad nobody helped me.
+\end{acknowledgements}
+
+\clearpage
+
+\end{frontmatter}
+
 \include{intro/intro}
 \newpage
 \addcontentsline{toc}{chapter}{Bibliography}
