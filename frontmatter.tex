@@ -1,54 +1,29 @@
-%% declarations for front matter
-\title{Merging Galaxies and Dark Matter Halos}
-
-%% go to bear facts to find your 'real' name
-\author{Andrew Rodger Wetzel}
-
-%% year you are getting this
-\degreesemester{Spring}
-\degreeyear{2010}
-
-%% type of degree
+\title{My Amazing Thesis}
+\author{G. Rad Student} % must match BearFacts!
+\degreesemester{Fall}
+\degreeyear{2012}
 \degree{Doctor of Philosophy}
-
-%% committee chair
-\chair{Professor Martin White}
-
-%% other committee members
-\othermembers{
-Professor Bill Holzapfel \\
-Professor Eliot Quataert
-}
-
-%% total number of signers
 \numberofmembers{3}
-
-%% previous degrees (no longer needed, but need to designate as empty field)
-\prevdegrees{}
-
-%% main department
+\chair{Professor A. Learned Scholar}
+\othermembers{
+Professor Number Two \\
+Professor Number Three
+}
+\prevdegrees{} % always leave empty
 \field{Astrophysics}
-
-%% campus
 \campus{Berkeley}
 
-%% make the title pages
 \maketitle
-
-%% copyright if you desire
 \copyrightpage
 
-%% abstract
 \begin{abstract}
-My work is awesome.  Give me a Ph.D.
+My work is awesome. Give me a Ph.D.
 \end{abstract}
 
-%% begining of the front matter
 \begin{frontmatter}
 \renewcommand{\thepage}{\roman{page}}
 \setcounter{page}{1}
 
-%% dedication
 \begin{dedication}
 \null\vfil
 {\large
@@ -58,17 +33,14 @@ I dedicate this dissertation to graduate students everywhere.
 \null\vfil
 \end{dedication}
 
-%% TABLE OF CONTENTS
 \tableofcontents
-\listoffigures
-\listoftables
+\listoffigures % optional
+\listoftables % optional
 
-%% if you want a 'list of code' when using the code/sty file, include these
-%% %\listofcodes
-%% %\addcontentsline{toc}{chapter}{List of Code Examples}
-%% %
+% If using code.sty, can also add:
+%% \listofcodes
+%% \addcontentsline{toc}{chapter}{List of Code Examples}
 
-%% acknowledgements
 \begin{acknowledgements}
 Too bad nobody helped me.
 \end{acknowledgements}
@@ -76,4 +48,3 @@ Too bad nobody helped me.
 \clearpage
 
 \end{frontmatter}
-
