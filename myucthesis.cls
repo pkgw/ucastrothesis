@@ -1082,9 +1082,9 @@ Dissertation Committee Chair
 
 \long\def\@makecaption#1#2{% Add space only if something is ...
    \par\ifdim\prevdepth>-\p@ \vskip 10\p@\relax \fi % above the caption
-   \setbox\@tempboxa\hbox{\vbox to\topskip{}#1: #2\unskip\strut}%
+   \setbox\@tempboxa\hbox{\vbox to\topskip{}{\small\textit{#1}: #2}\unskip\strut}%
    \ifdim \wd\@tempboxa >\hsize      % IF longer than one line:
-       {\ssp#1: #2\unskip\strut\par} %   THEN set as ordinary paragraph.
+       {\ssp{\small\textit{#1}: #2}\unskip\strut\par} %   THEN set as ordinary paragraph.
      \else                           %   ELSE  center.
        \hbox to\hsize{\hfil\unhbox\@tempboxa\hfil}%
    \fi}
