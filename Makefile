@@ -1,8 +1,6 @@
 # This work is dedicated to the public domain.
 
-texargs = -interaction nonstopmode -halt-on-error -file-line-error
-
-default: mthesis.pdf # default target if you just type "make"
+default: thesis.pdf # default target if you just type "make"
 
 
 # Resources and rules for the introductory chapter. Sample 'make' rule
@@ -29,16 +27,11 @@ intro/processed.tex: intro/sample.tex
 
 deps += myucthesis.cls uct12.clo aasmacros.sty mydeluxetable.sty \
   setup.tex thesis.bib yahapj.bst
-cleans += thesis.aux thesis.bbl thesis.blg thesis.lof thesis.log \
-  thesis.lot thesis.out thesis.toc mthesis.pdf setup.aux
-toplevels += mthesis.pdf
+cleans += thesis.pdf setup.aux .latexwork/*
+toplevels += thesis.pdf
 
-mthesis.pdf: thesis.tex $(deps)
-	pdflatex $(texargs) $(basename $<) >chatter.txt
-	bibtex $(basename $<)
-	pdflatex $(texargs) $(basename $<) >chatter.txt
-	pdflatex $(texargs) $(basename $<) >chatter.txt
-	mv thesis.pdf $@
+thesis.pdf: thesis.tex $(deps)
+	./latexdriver -x -l -b $< $@
 
 
 # Approval page
@@ -47,7 +40,7 @@ cleans += approvalpage.aux approvalpage.log approvalpage.pdf
 toplevels += approvalpage.pdf
 
 approvalpage.pdf: approvalpage.tex $(deps)
-	pdflatex $(texargs) $(basename $<)
+	./latexdriver -x -l $< $@
 
 
 # Helpers

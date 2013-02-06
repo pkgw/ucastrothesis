@@ -6,6 +6,12 @@
 % files. This is useful if you want to manually tweak them before you
 % generate your final PDF.
 
+% XeTeX font setup. The microtype stuff gives fancy typography
+% improvements that make things look (very) subtly better.
+\usepackage{fontspec}
+\newfontfeature{Microtype}{protrusion=default;expansion=default;}
+\setmainfont[Microtype,Ligatures=TeX]{Linux Libertine O}
+%\setmainfont[Microtype,Ligatures=TeX]{Times New Roman}
 
 % Page layout. The fancyhdr package may complain about the need for a
 % larger headheight, depending on how long chapter titles are; if left
@@ -14,8 +20,8 @@
 % show a frame around the margins on every page, which is great for
 % checking that you don't overflow anywhere.
 
-%\usepackage[letterpaper,includehead,margin=1in,headheight=15pt,showframe]{geometry}
-\usepackage[letterpaper,includehead,margin=1in,headheight=15pt]{geometry}
+%\usepackage[xetex,letterpaper,includehead,margin=1in,headheight=15pt,showframe]{geometry}
+\usepackage[xetex,letterpaper,includehead,margin=1in,headheight=15pt]{geometry}
 \usepackage{fancyhdr}
 \pagestyle{fancyplain}
 \lhead[\fancyplain{\thepage}{\thepage}]{\fancyplain{}{\scshape\rightmark}}
@@ -38,8 +44,6 @@
 
 % Other setup:
 
-\usepackage[T1]{fontenc} % see http://tinyurl.com/67zdxwf
-\usepackage{microtype} % various subtle typographic improvements
 \usepackage[colorlinks,urlcolor=blue,citecolor=blue,linkcolor=blue,pdfusetitle]{hyperref}
 \usepackage{pdflscape} % allows landscape-oriented figures with PDF page rotation
 \usepackage{aasmacros,amsmath,amssymb,graphicx}

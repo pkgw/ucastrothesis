@@ -1,6 +1,14 @@
 % This sample file is dedicated to the public domain.
 \documentclass[12pt]{myucthesis}
-\usepackage[letterpaper,includehead,margin=1in]{geometry}
+
+% XeTeX font setup. The microtype stuff gives fancy typography
+% improvements that make things look (very) subtly better.
+\usepackage{fontspec}
+\newfontfeature{Microtype}{protrusion=default;expansion=default;}
+\setmainfont[Microtype,Ligatures=TeX]{Linux Libertine O}
+%\setmainfont[Microtype,Ligatures=TeX]{Times New Roman}
+
+\usepackage[xetex,letterpaper,includehead,margin=1in]{geometry}
 \begin{document}
 \include{setup}
 \approvalpage
