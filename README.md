@@ -38,6 +38,17 @@ files (via `make clean`).
 Things will probably go the most smoothly if you take the time to
 learn a bit about how `latex`, `make`, and `git` work.
 
+XeTeX Support
+=============
+
+The `xetex` branch of this repository includes support for compiling your
+thesis with the [XeTeX](http://tug.org/xetex/) engine rather than standard
+*LaTeX*. The main benefit of this is that *XeTeX* supports modern fonts much
+better than classic *LaTeX*; in this author's judgment, you can do much better
+than standard *LaTeX* with a well-chosen font (Times New Roman, or Libertine
+on Linux). *XeTeX* also lets you use Unicode characters (such as: é Å ☺)
+directly in your document. See [the XeTeX homepage](http://tug.org/xetex/), or
+[Google](http://www.google.com/) for more information.
 
 Copyright Notice
 ================
