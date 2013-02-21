@@ -25,11 +25,7 @@ intro/processed.tex: intro/sample.tex
 
 # The thesis itself. We move the PDF to a new filename so that viewers
 # don't keep on trying to reload the file as it's being written and
-# rewritten by pdfLaTeX. Instead we pseudo-atomically rename after all
-# the processing is done. (You might think that a 'mv' would be the
-# way to do this, but on Linux, Evince doesn't try to reload the file
-# that it's currently looking at unless the file gets opened in write
-# mode and closed, so we 'cp' instead.)
+# rewritten by pdfLaTeX.
 
 deps += myucthesis.cls uct12.clo aasmacros.sty mydeluxetable.sty \
   setup.tex thesis.bib yahapj.bst
@@ -42,7 +38,7 @@ mthesis.pdf: thesis.tex $(deps)
 	bibtex $(basename $<)
 	pdflatex $(texargs) $(basename $<) >chatter.txt
 	pdflatex $(texargs) $(basename $<) >chatter.txt
-	cp -f thesis.pdf $@ && rm -f thesis.pdf
+	mv thesis.pdf $@
 
 
 # Approval page
