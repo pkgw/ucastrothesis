@@ -35,8 +35,9 @@ needs to be created before compiling your thesis; add it to "cleans"
 if it can safely be deleted to force regeneration of all your thesis
 files (via `make clean`).
 
-Things will probably go the most smoothly if you take the time to
-learn a bit about how `latex`, `make`, and `git` work.
+Things will go the most smoothly if you take the time to learn a bit about how
+`latex`, `make`, and `git` work. All three are very powerful tools that
+are worth understanding.
 
 XeTeX Support
 =============
@@ -50,10 +51,19 @@ on Linux). *XeTeX* also lets you use Unicode characters (such as: é Å ☺)
 directly in your document. See [the XeTeX homepage](http://tug.org/xetex/), or
 [Google](http://www.google.com/) for more information.
 
+Bugs & Improvements
+===================
+
+If you run into problems with these templates or would like to contribute an
+improvement, please use the [GitHub issue
+tracker](https://github.com/pkgw/ucastrothesis/issues) and/or file a pull
+request. If you're having *LaTeX* issues, the [TeX
+StackExchange](http://tex.stackexchange.com/) is an excellent resource.
+
 Copyright Notice
 ================
 
-Copyright 2012 Peter Williams
+Copyright 2012, 2013 Peter Williams
 
 This file is free documentation; the copyright holder gives unlimited
 permission to copy, distribute, and modify it.
