@@ -38,10 +38,10 @@ cleans += thesis.aux thesis.bbl thesis.blg thesis.lof thesis.log \
 toplevels += mthesis.pdf
 
 mthesis.pdf: thesis.tex $(deps)
-	pdflatex $(texargs) $(basename $<) >& chatter.txt
+	pdflatex $(texargs) $(basename $<) >chatter.txt
 	bibtex $(basename $<)
-	pdflatex $(texargs) $(basename $<) >& chatter.txt
-	pdflatex $(texargs) $(basename $<) >& chatter.txt
+	pdflatex $(texargs) $(basename $<) >chatter.txt
+	pdflatex $(texargs) $(basename $<) >chatter.txt
 	cp -f thesis.pdf $@ && rm -f thesis.pdf
 
 
