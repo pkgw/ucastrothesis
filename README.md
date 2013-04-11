@@ -49,6 +49,8 @@ repository that may be activated by merging them into your tree.
 The options are:
 
   * `option-co-chairs` makes it so your thesis has two co-chairs
+  * `option-microtype` turns on some subtle typographic improvements that are 
+    nice, but some *LaTeX* installs have trouble handling.
   * `option-xetex` compiles your PDF with the [XeTeX](http://tug.org/xetex/) engine
     rather than standard *LaTeX*.
 
@@ -62,7 +64,7 @@ on overlapping matters, you may have to merge their changes manually using
 
 To learn a bit more about an option, read its tip commit message:
 
-    git show option-xetex
+    git show option-microtype
 
 Finally, if an option *almost* does something you need, but not quite, you can
 investigate how to implement it yourself by looking at the changes made when
@@ -72,14 +74,6 @@ activating the option. This is done with:
 
 If you implement a new optional feature, please submit it with a GitHub pull
 request!
-
-Known Problems
-==============
-
-  * There's been a report of *LaTeX* crashes when compiling using Miktex on
-    Windows. The problem was resolved by deactivating the `microtype` package.
-    The function of `microtype` is purely aesthetic, and super subtle at that,
-    so it's completely fine to deactivate it.
 
 Bugs & Improvements
 ===================
