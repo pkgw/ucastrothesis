@@ -272,6 +272,7 @@
 
 % The name of your committee's chair
 \def\chair#1{\gdef\@chair{#1}}
+\def\chairb#1{\gdef\@chairb{#1}}
 
 % The names of your other committe members, one per line
 \def\othermembers#1{\gdef\@othermembers{#1}}
@@ -279,7 +280,7 @@
 % The number of committee members, which affects both the
 % number of lines and the amount of space between lines
 % on the approval page.
-\def\@numberofmembers{3}
+\def\@numberofmembers{4}
 \def\@approvalspace{.75in}
 \def\numberofmembers#1{\gdef\@numberofmembers{#1}
 \ifnum \@numberofmembers > 3
@@ -351,9 +352,9 @@
 \vspace{6ex}
 \begin{center}
 \fmsmallfont
-  Committee in charge: \par
-\bigskip \medskip
-{\@chair}, Chair \\
+  Committee in charge: \\
+{\@chair}, Co-chair \\
+{\@chairb}, Co-chair \\
 {\@othermembers} \\
   \bigskip \bigskip \bigskip
   {\@degreesemester \ \@degreeyear}
@@ -383,10 +384,11 @@
 \vspace{.25in}
 \begin{center}
 \vspace{\@approvalspace}
-$\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small Chair%
-\hspace{3.15in} Date }}\:$ \\
+$\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small Co-chair%
+\hspace{2.97in} Date }}\:$ \\
 \vspace{\@approvalspace}
-$\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small ~\hspace{3.5in} Date }}\:$ \\
+$\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small Co-chair%
+\hspace{2.97in} Date }}\:$ \\
 \vspace{\@approvalspace}
 $\:\overline{~~~~ \mbox{\rule{0in}{0.16in}\small ~\hspace{3.5in} Date }}\:$ \\
 \vspace{\@approvalspace}
@@ -469,6 +471,18 @@ University of California, {\@campus}\par
 \rule{3.2in}{.5pt}\\
 \@chair\\
 Dissertation Committee Chair
+\vspace{-0.3cm}
+\end{minipage}}
+
+\def\abstractsignatureb{
+\hspace*{\fill}
+\begin{minipage}[t]{3.25in}
+\addtolength{\baselineskip}{-.5\baselineskip}
+\vspace{1.7cm}
+\rule{3.2in}{.5pt}\\
+\@chairb\\
+Dissertation Committee Co-Chair
+\vspace{-0.3cm}
 \end{minipage}}
 
 % DEDICATION
