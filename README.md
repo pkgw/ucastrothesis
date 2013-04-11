@@ -14,7 +14,7 @@ The key files that you need to look at are:
 
   * `setup.tex`, where you enter boilerplate info like your thesis title.
   * `thesis.tex`, where you put toplevel LaTeX definitions, include
-    packages, and write your abstract, dedication, and acknowledgements.
+    packages, and write your abstract, dedication, and acknowledgments.
   * `intro/intro.tex`, a template thesis chapter.
   * `Makefile`, which defines the rules for how the thesis is compiled.
 
