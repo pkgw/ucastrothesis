@@ -39,17 +39,39 @@ Things will go the most smoothly if you take the time to learn a bit about how
 `latex`, `make`, and `git` work. All three are very powerful tools that
 are worth understanding.
 
-XeTeX Support
-=============
+Optional Features
+=================
 
-The `xetex` branch of this repository includes support for compiling your
-thesis with the [XeTeX](http://tug.org/xetex/) engine rather than standard
-*LaTeX*. The main benefit of this is that *XeTeX* supports modern fonts much
-better than classic *LaTeX*; in this author's judgment, you can do much better
-than standard *LaTeX* with a well-chosen font (Times New Roman, or Libertine
-on Linux). *XeTeX* also lets you use Unicode characters (such as: é Å ☺)
-directly in your document. See [the XeTeX homepage](http://tug.org/xetex/), or
-[Google](http://www.google.com/) for more information.
+This module includes support for several optional features that may be helpful
+in unusual circumstances. This options are provided as branches in the `git`
+repository that may be activated by merging them into your tree.
+
+The options are:
+
+  * `option-co-chairs` makes it so your thesis has two co-chairs
+  * `option-xetex` compiles your PDF with the [XeTeX](http://tug.org/xetex/) engine
+    rather than standard *LaTeX*.
+
+To enable an option, use `git` to merge it into your codebase; for example:
+
+    git merge option-co-chairs
+
+You should be able to do this with multiple options, although if they touch
+on overlapping matters, you may have to merge their changes manually using
+`git`'s conflict resolution framework.
+
+To learn a bit more about an option, read its tip commit message:
+
+    git show option-xetex
+
+Finally, if an option *almost* does something you need, but not quite, you can
+investigate how to implement it yourself by looking at the changes made when
+activating the option. This is done with:
+
+    git diff master..option-co-chairs
+
+If you implement a new optional feature, please submit it with a GitHub pull
+request!
 
 Bugs & Improvements
 ===================
