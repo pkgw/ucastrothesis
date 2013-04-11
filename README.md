@@ -73,6 +73,14 @@ activating the option. This is done with:
 If you implement a new optional feature, please submit it with a GitHub pull
 request!
 
+Known Problems
+==============
+
+  * There's been a report of *LaTeX* crashes when compiling using Miktex on
+    Windows. The problem was resolved by deactivating the `microtype` package.
+    The function of `microtype` is purely aesthetic, and super subtle at that,
+    so it's completely fine to deactivate it.
+
 Bugs & Improvements
 ===================
 
