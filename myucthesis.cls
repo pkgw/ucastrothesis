@@ -456,7 +456,8 @@ by\par
 \vspace{3ex}
 University of California, {\@campus}\par
 \vspace{3ex}
-{\@chair}, Chair}
+{\@chair}, Co-chair\\
+{\@chairb}, Co-chair}
 \vspace{3ex}
 \end{center}}
 
