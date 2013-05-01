@@ -62,9 +62,9 @@ You should be able to do this with multiple options, although if they touch
 on overlapping matters, you may have to merge their changes manually using
 `git`'s conflict resolution framework.
 
-To learn a bit more about an option, read its tip commit message:
+To learn a bit more about an option, read its commit messages:
 
-    git show option-microtype
+    git log master..option-microtype
 
 Finally, if an option *almost* does something you need, but not quite, you can
 investigate how to implement it yourself by looking at the changes made when
