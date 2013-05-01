@@ -461,16 +461,6 @@ University of California, {\@campus}\par
 \def\endabstract{\par\vfil\null\end{alwayssingle}
 }
 
-\def\abstractsignature{
-\hspace*{\fill}
-\begin{minipage}[t]{3.25in}
-\addtolength{\baselineskip}{-.5\baselineskip}
-\vspace{1.7cm}
-\rule{3.2in}{.5pt}\\
-\@chair\\
-Dissertation Committee Chair
-\end{minipage}}
-
 % DEDICATION
 %
 % The dedication environment just makes sure the dedication gets its
