@@ -39,6 +39,7 @@ Things will go the most smoothly if you take the time to learn a bit about how
 `latex`, `make`, and `git` work. All three are very powerful tools that
 are worth understanding.
 
+
 Optional Features
 =================
 
@@ -75,6 +76,7 @@ activating the option. This is done with:
 If you implement a new optional feature, please submit it with a GitHub pull
 request!
 
+
 Bugs & Improvements
 ===================
 
@@ -83,6 +85,21 @@ improvement, please use the [GitHub issue
 tracker](https://github.com/pkgw/ucastrothesis/issues) and/or file a pull
 request. If you're having *LaTeX* issues, the [TeX
 StackExchange](http://tex.stackexchange.com/) is an excellent resource.
+
+
+See Also
+========
+
+These templates are **formatted for other universities**, but may provide some
+inspiration if you want to get down and dirty:
+
+  * [Jordan Suchow](https://twitter.com/suchow)'s
+    [Dissertate.cls](https://github.com/suchow/Dissertate/), which has some
+    nice fonts (at the expense of requiring the *xelatex* engine).
+  * [Andrew Leifer](https://twitter.com/AndrewLeifer)'s
+    [template](https://github.com/aleifer/LaTeX-template-for-Harvard-dissertation)
+    derived from the above.
+
 
 Copyright Notice
 ================
