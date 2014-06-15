@@ -104,7 +104,7 @@ inspiration if you want to get down and dirty:
 Copyright Notice
 ================
 
-Copyright 2012, 2013 Peter Williams
+Copyright 2012, 2013, 2014 Peter Williams
 
 This file is free documentation; the copyright holder gives unlimited
 permission to copy, distribute, and modify it.
